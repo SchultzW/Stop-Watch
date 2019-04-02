@@ -61,16 +61,25 @@ function pad(number) {
 
 function stopTimer() {
     // if the timer is running, stop it
-
+    if(isRunning=true)
+    {
+        isRunning=false;
+        clearInterval(timer);
+    }
+        
+    
+    
 }
 
 function resetTimer() {
     // stop the timer
-    
+    stopTimer();
     // set the timerTime back to 0
+    timerTime=0;
     
     // write 00 to the elements on the page for minutes and seconds
-
+    document.getElementById("minutes").innerHTML="00";
+    document.getElementById("seconds").innerHTML="00";
 }
 
 // When the page has finished loading, call the function init

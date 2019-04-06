@@ -4,27 +4,40 @@
   <meta charset="UTF-8">
   <title>My Stop Watch in JavaScript</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-  <div>
+  <div class='container' style='text-align:center;'>
     <!-- timer -->
-    <div class="timer">
-      <span id="minutes">00</span> : <span id="seconds">00</span>
+    <!-- padder?-->
+    <div class="row">
+      <h1 Id="title col-sm-8">A wonderful timer of JavaScriptness!</h1>
+    <div class="timer col-sm-10">
+     <h1><span id="minutes">00</span> : <span id="seconds">00</span></h1>
+    </div>
     </div>
     <!-- timer buttons -->
-    <div class="timer-buttons">
-      <button id="start">
+    <div class='row'>
+    <div class="timer-buttons col-sm-10">
+      <button id="start"class='btn btn-success'>
         Start
       </button>
-      <button id="stop">
+      <button id="stop" class='btn btn-danger'>
         Stop
       </button>
-      <button id="reset">
+      <button id="reset" class='btn btn-primary'>
         Reset
       </button>
+    </div>
     </div>
   </div>
   
   <script src="index.js"></script>
+  
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </body>
 </html>

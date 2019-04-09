@@ -65,10 +65,7 @@ function stopTimer() {
     {
         isRunning=false;
         clearInterval(timer);
-    }
-        
-    
-    
+    }  
 }
 
 function resetTimer() {
